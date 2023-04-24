@@ -18,8 +18,8 @@ main {
 }
 
 p {
-  color: #44433e;
-  font-size: 0.9rem;
+  color: #333330;
+  font-size: 1rem;
   font-weight: 400;
 }
 
@@ -50,14 +50,14 @@ p {
 .date {
   font-size: 0.9rem;
   font-weight: 800;
-  color: #44433e;
+  color: #333330;
   padding: 2%;
   margin: 3% auto 5% auto;
 }
 
 nav {
   background: #fff;
-  color: #6e6c64;
+  color: #333330;
   display: flex;
   justify-content: space-between;
 }
@@ -77,7 +77,7 @@ nav .mainMenu li a {
 
 nav .mainMenu li a:hover {
   background: #fff;
-  color: #ff3f00;
+  color: #f06e43;
 }
 
 nav .openMenu {
