@@ -35,22 +35,10 @@ p {
   font-size: 2.5rem;
   font-weight: 800;
   background-image: url('images/text-bg.jpg');
-  background-clip: text;
+  background-clip: initial;
   -webkit-background-clip: text; /* For Safari */
   color: transparent;
   -webkit-text-fill-color: transparent; /* For Safari */
-}
-
-.title::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  opacity: 0.9; /* Adjust the opacity to darken or lighten the image */
-  z-index: -1;
 }
 
 .main-text {
