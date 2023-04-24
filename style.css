@@ -31,6 +31,86 @@ p {
   min-height: 100vh;
 }
 
+.program {
+  background-image: url('images/back-2.jpg');
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.program-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 2%;
+}
+
+.program-card {
+  display: flex;
+  justify-content: flex-start;
+  opacity: 0.2;
+  margin: 4px 0 2px 0;
+}
+
+.program-img {
+  height: 12vh;
+  width: 10vh;
+  border: 1px solid #c03030;
+}
+
+.program-card p {
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 300;
+  padding: 2%;
+  z-index: 10;
+}
+
+.program-card h3 {
+  font-size: 0.8rem;
+  font-weight: 300;
+  padding: 2% 3% 2% 0;
+}
+
+.program-text {
+  border: 1px solid #fff;
+  margin: 2px;
+  height: 12vh;
+  width: 13vh;
+}
+
+.program-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.program-btn button {
+  background: #f06e43;
+  height: 10vh;
+  width: 35vh;
+  border: none;
+}
+
+.program-title {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  padding: 5%;
+}
+
+.program-btn button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.program-content {
+  border: 1px solid #14bb6d;
+  margin: 2px;
+  height: 12vh;
+  width: 34vh;
+}
+
 .title {
   font-size: 2.5rem;
   font-weight: 800;
