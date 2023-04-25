@@ -49,22 +49,24 @@ p {
 .program-card {
   display: flex;
   justify-content: flex-start;
-  opacity: 0.2;
-  margin: 4px 0 2px 0;
+  background-color: rgba(128, 128, 128, 0.3);
+  margin: 8px 0 2px 0;
 }
 
 .program-img {
   height: 12vh;
   width: 10vh;
-  border: 1px solid #c03030;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .program-card p {
   color: #fff;
-  font-size: 0.8rem;
   font-weight: 300;
   padding: 2%;
   z-index: 10;
+  font-size: 0.9rem;
 }
 
 .program-card h3 {
@@ -74,10 +76,17 @@ p {
 }
 
 .program-text {
-  border: 1px solid #fff;
   margin: 2px;
   height: 12vh;
   width: 13vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.program-text h3 {
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .program-btn {
@@ -86,7 +95,7 @@ p {
 }
 
 .program-btn button {
-  background: #f06e43;
+  background: #ff3f00;
   height: 10vh;
   width: 35vh;
   border: none;
@@ -102,13 +111,16 @@ p {
 .program-btn button a {
   text-decoration: none;
   color: #fff;
+  font-size: 1.1rem;
 }
 
 .program-content {
-  border: 1px solid #14bb6d;
   margin: 2px;
   height: 12vh;
   width: 34vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .title {
