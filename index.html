@@ -18,15 +18,15 @@
         <!-- navigation bar -->
         <header>
             <nav>
-                <div class="logo"><h1>ARTFEST</h1></div>
+                <div class="logo"><a href="about"><h1>ARTFEST</h1></a></div>
                 <div class="openMenu"><i class="fa fa-bars"></i></div>
                 <ul class="mainMenu">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Program</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#program">Program</a></li>
                     <li><a href="#">Join</a></li>
                     <li><a href="#">Sponsor</a></li>
                     <li><a href="#">News</a></li>
-                    <li><a href="#">CC Campaign</a></li>
+                    <li class="list-item"><a href="#">CC Campaign</a></li>
                     <div class="closeMenu"><i class="fa fa-times"></i></div>
                 </ul>
             </nav>
@@ -35,8 +35,10 @@
         <!-- homepage -->
         <main>
             <h3>"Hello, art lovers!"</h3>
-            <h2 class="title">GLOBAL ART & DESIGN<br>FESTIVAL<br>2023</h2>
-            <div>
+            <div class="mainHead">
+                <h2 class="title">GLOBAL ART & DESIGN<br>FESTIVAL<br>2023</h2>
+            </div>
+            <div class="paragraph">
                 <p class="main-text">Welcome to the Creative Arts Global Festival 2023, the biggest art festival in the world!
                    Our festival celebrates the diversity and creativity of art from around the world.
                    Discover the power and beauty of creativity at the Creative Arts Global Festival 2023.
@@ -47,7 +49,7 @@
                     2023.5.15(MON) ~ 17(WED)
                 </h2>
             </div>
-            <P>@Central District Art Centre, Nairobi.</P>
+            <P class="location">@Central District Art Centre, Nairobi.</P>
         </main>
     </section>
     <!-- end homepage -->
@@ -103,9 +105,13 @@
                 </div>
             </div>
         </div>
+        <div class="more">
+            <a href="#">SEE THE WHOLE PROGRAM</a>
+        </div>
         <div class="program-btn">
             <button><a href="#" class="btn">Join Global Art Festival 2023</a></button>
         </div>
+        
     </section>
     <script src="app.js"></script>
 </body>
