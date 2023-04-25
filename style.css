@@ -237,7 +237,140 @@ nav .logo {
     font-size: 1.5rem;
   }
 
-  .logo {
+  .logo,
+  .more {
     display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .list-item {
+    border: 3px solid #ff3f00;
+    margin: 3px;
+    border-radius: 8px;
+  }
+
+  .logo a {
+    text-decoration: none;
+    color: rgb(10, 165, 165);
+  }
+
+  .more a {
+    color: #fff;
+  }
+
+  .mainMenu .list-item a {
+    color: #ff3f00;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .mainMenu .list-item a:hover {
+    color: #6e6c64;
+    background: #ff3f00;
+  }
+
+  .program-btn {
+    display: none;
+  }
+
+  .program {
+    min-height: 50vh;
+    max-width: 100%;
+  }
+
+  .program-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 100%;
+    min-height: 30vh;
+  }
+
+  .program-card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    width: 20vw;
+    height: 30vh;
+  }
+
+  .program-content {
+    margin: 2px;
+    height: 12vh;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .underline {
+    width: 10%;
+    height: 1px;
+    background: #ff3f00;
+    margin: 1% auto 1% auto;
+  }
+
+  .mainHead {
+    padding: 2%;
+    min-height: 27vh;
+  }
+
+  .mainHead h2 {
+    font-size: 4rem;
+    font-weight: 800;
+  }
+
+  main h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    padding-left: 2%;
+  }
+
+  .main-text {
+    border: 2px solid #fff;
+    padding: 2%;
+    margin: 3% auto 0 0;
+    width: 50%;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .paragraph {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .date {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #333330;
+  }
+
+  .location {
+    margin-top: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .logo h1 {
+    margin-left: 50px;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 200px;
+  }
+
+  .more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 5vh;
   }
 }
