@@ -17,3 +17,96 @@ openMenu.addEventListener('click', show);
 closeMenu.addEventListener('click', close);
 program.addEventListener('click', close);
 home.addEventListener('click', close);
+
+// My card content
+const cardData = [
+  {
+    imageSrc: '/images/picaso1.jpg',
+    subtitle: 'Pablo Picasso',
+    description:
+      'A Spanish painter, sculptor, and printmaker of the 20th century.',
+  },
+  {
+    imageSrc: '/images/vincent.jpg',
+    subtitle: 'Vincent van Gogh',
+    description:
+      'A Dutch painter, He is known for his bold use of color and expressive brushwork.',
+  },
+  {
+    imageSrc: '/images/salvador.jpg',
+    subtitle: 'Salvador Dali',
+    description:
+      'A Spanish surrealist painter, Dali is known for his bizarre and dreamlike imagery.',
+  },
+  {
+    imageSrc: '/images/leonardo.jpg',
+    subtitle: 'Leonardo da Vinci',
+    description:
+      'An Italian polymath, da Vinci was a painter, sculptor, architect, engineer, and inventor.',
+  },
+  {
+    imageSrc: '/images/andy.jpg',
+    subtitle: 'Andy Warhol',
+    description:
+      'An American artist and leading figure in the pop art movement, Warhol is known for his colorful and iconic images of celebrities and everyday objects.',
+  },
+  {
+    imageSrc: '/images/frank.jpg',
+    subtitle: 'Frank Lloyd Wright',
+    description:
+      'An American architect, Wright is known for his innovative and organic designs that emphasized harmony between humans and nature.',
+  },
+];
+
+// Get container element
+const container = document.querySelector('.featured-container');
+
+// Loop through card data and create cards
+cardData.forEach((card) => {
+  // Create card element
+  const cardElement = document.createElement('div');
+  cardElement.classList.add('card');
+
+  // Create image container element
+  const imageContainer = document.createElement('div');
+  imageContainer.classList.add('image-container');
+
+  // Create image element
+  const imageElement = document.createElement('img');
+  imageElement.src = card.imageSrc;
+  imageElement.alt = card.subtitle;
+
+  // Create text element
+  const textElement = document.createElement('div');
+  textElement.classList.add('card-text');
+
+  // Create name element
+  const nameElement = document.createElement('div');
+  nameElement.classList.add('card-name');
+  nameElement.innerHTML = `<h3>${card.subtitle}</h3>`;
+
+  // Create title element
+  const titleElement = document.createElement('div');
+  titleElement.classList.add('card-title');
+  titleElement.innerHTML = `<p>${card.subtitle}</p>`;
+
+  // Create description element
+  const descriptionElement = document.createElement('div');
+  descriptionElement.classList.add('card-description');
+  descriptionElement.innerHTML = `<p>${card.description}</p>`;
+
+  // Append child elements to text element
+  textElement.appendChild(nameElement);
+  textElement.appendChild(titleElement);
+  textElement.appendChild(descriptionElement);
+
+  // Append image element to image container
+  imageContainer.appendChild(imageElement);
+
+  // Append child elements to card element
+  cardElement.appendChild(imageContainer);
+  cardElement.appendChild(textElement);
+
+  // Append card element to container
+  container.appendChild(cardElement);
+});
