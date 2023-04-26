@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'lato', sans-serif;
 }
@@ -24,7 +28,7 @@ p {
 }
 
 .homePage {
-  background-image: url('images/back-1.jpg');
+  background-image: url('images/bg-1.jpg');
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
@@ -117,6 +121,11 @@ p {
   padding: 5%;
 }
 
+.contact a {
+  color: #33363f;
+  font-weight: 800;
+}
+
 .program-btn button a {
   text-decoration: none;
   color: #fff;
@@ -201,6 +210,10 @@ nav .logo {
   cursor: pointer;
 }
 
+#featured-artists {
+  background: #fcfcfc;
+}
+
 .featured-title {
   display: flex;
   flex-direction: column;
@@ -242,11 +255,205 @@ nav .logo {
 
 .card {
   display: flex;
-  width: 35%; /* 50% width minus 10px margin */
+  width: 35%;
   margin-bottom: 20px;
   transition: 0.3s;
   overflow: hidden;
   padding: 0% 2% 0% 2%;
+}
+
+.partners {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30vh;
+  background: #272a31;
+}
+
+.partners-title {
+  color: #d3d3d3;
+}
+
+.partners-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partners-container img {
+  width: 15vw;
+  height: 10vh;
+  margin: 20px;
+}
+
+.creative-commons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fcfcfc;
+  height: 30vh;
+}
+
+.creative-commons img {
+  width: 12vw;
+  height: 5vh;
+  margin: 20px 20px 20px 20px;
+}
+
+.creative-commons-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.creative-commons-text p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-left: 5%;
+}
+
+.about-art-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('images/about.jpg');
+  height: 90vh;
+}
+
+.about-art-title h2 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #ec5242;
+  text-align: center;
+}
+
+.about-art-text {
+  width: 65%;
+  min-height: 20vh;
+  background: #f4f8fb;
+  box-shadow: #d0d7e1 4px 2px 4px 2px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin: 5%;
+  text-align: center;
+  padding: 2%;
+  display: flex;
+  align-items: center;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.additional-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f4f8fb;
+  height: 72vh;
+  border-bottom: 2px solid #d0d7e1;
+}
+
+.additional-info img {
+  width: 30vw;
+  height: 32vh;
+  border: 2px solid #d0d7e1;
+  margin-bottom: 6%;
+}
+
+.additional-info article {
+  width: 80%;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin: 5%;
+}
+
+.events {
+  display: flex;
+  flex-direction: column;
+  background: #f4f8fb;
+}
+
+.events-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.events-text {
+  display: flex;
+  justify-content: center;
+}
+
+.events-text p {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.events-pics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.festival1,
+.festival2 {
+  width: 30vw;
+  height: 35vh;
+  margin: 20px;
+}
+
+.festival1 {
+  background-image: url('images/festival1.jpg');
+  background-size: cover;
+}
+
+.festival2 {
+  background-image: url('images/festival-2.jpg');
+  background-size: cover;
+}
+
+.festival-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 30vw;
+  height: 35vh;
+  background: rgba(238, 82, 60, 0.7);
+}
+
+.festival-text p {
+  color: #fff;
+}
+
+.creative-commons2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2e2e2e;
+  height: 30vh;
+}
+
+.creative-commons2 img {
+  width: 12vw;
+  height: 5vh;
+  margin: 20px 20px 20px 20px;
+}
+
+.creative-commons2 p {
+  color: #fff;
 }
 
 @media (max-width: 768px) {
