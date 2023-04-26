@@ -28,7 +28,7 @@ const cardData = [
   },
   {
     imageSrc: '/images/vincent.jpg',
-    subtitle: 'Vincent van Gogh',
+    subtitle: 'Vincent Gogh',
     description:
       'A Dutch painter, He is known for his bold use of color and expressive brushwork.',
   },
@@ -62,7 +62,7 @@ const cardData = [
 const container = document.querySelector('.featured-container');
 
 // Loop through card data and create cards
-cardData.forEach((card) => {
+cardData.forEach((card, index) => {
   // Create card element
   const cardElement = document.createElement('div');
   cardElement.classList.add('card');
@@ -109,4 +109,17 @@ cardData.forEach((card) => {
 
   // Append card element to container
   container.appendChild(cardElement);
+  // Append card element to container
+  if (index < 2) {
+    container.appendChild(cardElement);
+  } else {
+    let collapseContainer = document.querySelector('.cards-collapse');
+    if (!collapseContainer) {
+      const newCollapseContainer = document.createElement('div');
+      newCollapseContainer.classList.add('cards-collapse');
+      container.appendChild(newCollapseContainer);
+      collapseContainer = newCollapseContainer; // collapseContainer is a constant error is here
+    }
+    collapseContainer.appendChild(cardElement);
+  }
 });
