@@ -456,9 +456,122 @@ nav .logo {
   color: #fff;
 }
 
+.cards-collapse {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 @media (max-width: 768px) {
   nav {
     background: transparent;
+  }
+
+  .cards-collapse {
+    display: none;
+  }
+
+  .card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+
+  .image-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+  }
+
+  #featured-artists {
+    min-height: 60vh;
+  }
+
+  .card-text {
+    width: 70%;
+    height: 100px;
+    padding-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .card {
+    display: flex;
+    height: 16vh;
+    width: 37vh;
+  }
+
+  .featured-container {
+    min-height: 50vh;
+  }
+
+  .partners-container img {
+    width: 16vw;
+    height: 5vh;
+    margin: 20px;
+  }
+
+  .creative-commons {
+    display: none;
+  }
+
+  .about-art-text {
+    font-size: 0.7rem;
+    font-weight: 300;
+  }
+
+  .about-art-title h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact {
+    text-align: center;
+  }
+
+  .additional-title {
+    text-align: center;
+  }
+
+  .additional-info img {
+    width: 52vw;
+    height: 28vh;
+  }
+
+  .events-pics {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .festival1,
+  .festival2 {
+    width: 65vw;
+    height: 25vh;
+  }
+
+  .events-text {
+    text-align: center;
+  }
+
+  .festival-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 65vw;
+    height: 25vh;
+    background: rgba(238, 82, 60, 0.7);
+  }
+
+  .creative-commons2 img {
+    width: 15vw;
+    height: 4vh;
+    margin-left: 20px;
   }
 
   nav .mainMenu {
