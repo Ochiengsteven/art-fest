@@ -133,6 +133,13 @@ p {
   font-weight: 800;
 }
 
+.socials a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+
 .program-btn button a {
   text-decoration: none;
   color: #fff;
@@ -178,13 +185,6 @@ p {
   display: flex;
   align-items: center;
   margin-right: 7%;
-}
-
-.socials a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.2rem;
-  margin-left: 10px;
 }
 
 .top-nav {
@@ -505,6 +505,12 @@ nav .logo {
     display: none;
   }
 
+  .card {
+    display: flex;
+    height: 16vh;
+    width: 37vh;
+  }
+
   /* Show only the first two cards */
   .card:nth-child(n+2) {
     display: none;
@@ -530,7 +536,6 @@ nav .logo {
   /* Show the show more button */
   .show-more-button {
     font-size: 1.1rem;
-    display: block;
     margin-bottom: 40px;
     width: 70%;
     height: 50px;
@@ -575,15 +580,8 @@ nav .logo {
     white-space: nowrap;
   }
 
-  .card {
-    display: flex;
-    height: 16vh;
-    width: 37vh;
-  }
-
   .featured-container {
     max-height: 500px;
-    /* Add a vertical scrollbar */
     overflow-y: auto;
   }
 
