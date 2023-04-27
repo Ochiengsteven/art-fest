@@ -48,13 +48,13 @@ const cardData = [
     imageSrc: '/images/andy.jpg',
     subtitle: 'Andy Warhol',
     description:
-      'An American artist and leading figure in the pop art movement, Warhol is known for his colorful and iconic images of celebrities and everyday objects.',
+      'An American artist and leading figure in the pop art movement.',
   },
   {
     imageSrc: '/images/frank.jpg',
-    subtitle: 'Frank Lloyd Wright',
+    subtitle: 'Frank Lloyd',
     description:
-      'An American architect, Wright is known for his innovative and organic designs that emphasized harmony between humans and nature.',
+      'An American architect, Wright is known for his innovative and organic designs.',
   },
 ];
 
