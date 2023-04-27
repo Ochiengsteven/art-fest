@@ -123,3 +123,26 @@ cardData.forEach((card, index) => {
     collapseContainer.appendChild(cardElement);
   }
 });
+
+// Get the show more button
+const showMoreButton = document.querySelector('.show-more-button');
+
+// click event listener to the show more button
+showMoreButton.addEventListener('click', () => {
+  // Get the cards collapse container
+  const cardsCollapse = document.querySelector('.cards-collapse');
+
+  // Get all the cards in the cards collapse container
+  const cards = cardsCollapse.querySelectorAll('.card');
+
+  // Loop for cards and show them
+  cards.forEach((card) => {
+    card.style.display = 'flex';
+    card.style.height = '16vh';
+    card.style.width = '37vh';
+    card.classList.add('show-card');
+  });
+
+  // Hide the show more button
+  showMoreButton.style.display = 'none';
+});
