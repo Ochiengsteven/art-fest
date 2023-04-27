@@ -1,3 +1,5 @@
+@import url('http://fonts.cdnfonts.com/css/cocogoose');
+
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +11,11 @@ html {
 
 body {
   font-family: 'lato', sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
 }
 
 h3 {
@@ -126,6 +133,13 @@ p {
   font-weight: 800;
 }
 
+.socials a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+
 .program-btn button a {
   text-decoration: none;
   color: #fff;
@@ -142,6 +156,7 @@ p {
 }
 
 .title {
+  font-family: 'cocogoose', sans-serif;
   font-size: 2.5rem;
   font-weight: 800;
   background-image: url('images/text-bg.jpg');
@@ -158,7 +173,7 @@ p {
 }
 
 .date {
-  font-family: 'CocoGoose', sans-serif;
+  font-family: 'cocogoose', sans-serif;
   font-size: 0.9rem;
   font-weight: 800;
   color: #333330;
@@ -166,7 +181,21 @@ p {
   margin: 3% auto 5% auto;
 }
 
-nav {
+.socials {
+  display: flex;
+  align-items: center;
+  margin-right: 7%;
+}
+
+.top-nav {
+  background-color: #3e3e3e;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+}
+
+.bottom-nav {
   background: #fff;
   color: #333330;
   display: flex;
@@ -325,6 +354,7 @@ nav .logo {
 
 .about-art-title h2 {
   font-size: 3.5rem;
+  font-family: 'cocogoose', sans-serif;
   font-weight: 800;
   color: #ec5242;
   text-align: center;
@@ -462,13 +492,63 @@ nav .logo {
   justify-content: center;
 }
 
+.show-more-button {
+  display: none; /* Hide button by default */
+}
+
 @media (max-width: 768px) {
-  nav {
+  .bottom-nav {
     background: transparent;
   }
 
-  .cards-collapse {
+  .top-nav {
     display: none;
+  }
+
+  .card {
+    display: flex;
+    height: 16vh;
+    width: 37vh;
+  }
+
+  /* Show only the first two cards */
+  .card:nth-child(n+2) {
+    display: none;
+  }
+
+  /* Show the cards collapse container */
+  .cards-collapse {
+    display: block;
+  }
+
+  .cards-collapse .show-card {
+    display: flex;
+    height: 16vh;
+    width: 37vh;
+  }
+
+  .collapse-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Show the show more button */
+  .show-more-button {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    width: 70%;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #2e2e2e;
+  }
+
+  .show-more-button i {
+    font-size: 1.5rem;
+    padding: 8px;
   }
 
   .card img {
@@ -488,7 +568,7 @@ nav .logo {
   }
 
   #featured-artists {
-    min-height: 60vh;
+    margin: 30px 0;
   }
 
   .card-text {
@@ -500,24 +580,15 @@ nav .logo {
     white-space: nowrap;
   }
 
-  .card {
-    display: flex;
-    height: 16vh;
-    width: 37vh;
-  }
-
   .featured-container {
-    min-height: 50vh;
+    max-height: 500px;
+    overflow-y: auto;
   }
 
   .partners-container img {
     width: 16vw;
     height: 5vh;
     margin: 20px;
-  }
-
-  .creative-commons {
-    display: none;
   }
 
   .about-art-text {
@@ -527,6 +598,7 @@ nav .logo {
 
   .about-art-title h2 {
     font-size: 1.5rem;
+    font-family: 'cocogoose', sans-serif;
   }
 
   .contact {

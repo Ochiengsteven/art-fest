@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <!-- import lato font -->
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <!-- import coco goose font -->
-    <link href="https://fonts.googleapis.com/css?family=Coco+Goose&display=swap" rel="stylesheet">
 
     <!--fontawesome icons-->
     <script src="https://kit.fontawesome.com/27be2fb22c.js" crossorigin="anonymous"></script>
@@ -19,11 +17,22 @@
     <section class="homePage" id="about">
         <!-- navigation bar -->
         <header>
-            <nav>
+            <nav class="top-nav">
+                <!-- top navbar content -->
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#">English</a>
+                    <a href="#">My Page</a>
+                    <a href="#">Logout</a>
+                </div>
+            </nav>
+            <nav class="bottom-nav">
                 <div class="logo"><a href="#about"><img src="/images/arts-logo.png" alt=""></a></div>
                 <div class="openMenu"><i class="fa fa-bars"></i></div>
                 <ul class="mainMenu">
-                    <li><a href="https://ochiengsteven.github.io/art-fest/">About</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="#program">Program</a></li>
                     <li><a href="#">Join</a></li>
                     <li><a href="#">Sponsor</a></li>
@@ -124,9 +133,10 @@
         <div class="featured-container">
             
         </div>
-        <!-- <div class="more">
-            <a href="#">MORE</a>
-        </div> -->
+        <!-- Show more button -->
+        <div class="collapse-button">
+            <button class="show-more-button">Show More<i class="fa-solid fa-angle-down"></i></button>
+        </div>
     </section>
     <!-- end featured artists -->
 
@@ -172,88 +182,6 @@
             </div>
     </section>
     <!-- end rights -->
-    <!-- about art fest -->
-    <section>
-        <div class="about-art-container">
-            <div class="about-art-title">
-                <h2>GLOBAL ART & DESIGN<br>FESTIVAL 2023</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="about-art-text">
-                <article>The Creative Arts Global Festival 2023 is an event that brings together artists, performers, and art enthusiasts from all over the world.
-                     The festival is a celebration of the arts in all its forms, from painting and sculpture to music, dance, and theater.
-                     It is a platform for artists to showcase their work, connect with other artists, and engage with audiences from different cultures and backgrounds.
-                     The festival features a wide range of events and activities, including exhibitions, performances, workshops, and talks.
-                     Visitors can explore the works of emerging and established artists, attend concerts and dance performances, participate in interactive installations, and learn new skills in workshops and masterclasses.
-                     One of the highlights of the festival is the Art Market, where visitors can purchase artworks directly from the artists. The market features a diverse range of artworks, from traditional to contemporary, and offers a unique opportunity to discover new talent and acquire original pieces.
-
-                     The Creative Arts Global Festival 2023 is not just a celebration of art, but also a platform for dialogue and exchange. It is a space where artists and audiences can come together to explore the power and beauty of creativity, and to build bridges across cultures and communities.
-                </article>
-            </div>
-            <div class="contact">
-                <p>
-                    Please contact us if you have any questions or comments about art festival 2023.
-                </p>
-                <a href="">
-                    artfest2023@artk.org
-                </a>
-            </div>
-        </div>
-    </section>
-    <!-- end about art fest -->
-    <!-- additional info -->
-    <section class="additional-info">
-        <div class="additional-title">
-            <h2>Art Festival Global Summit 2023 Logo</h2>
-            <div class="underline"></div>
-        </div>
-        <article>
-            The Creative Arts Global Festival 2023 event logo is a visual representation of the festival's mission to celebrate the diversity and creativity of art from around the world. The logo features a colorful globe with brush strokes and musical notes, symbolizing the different forms of art that the festival showcases.
-        </article>
-        <div class="additional-img">
-            <img src="images/arts-logo.png" alt="logo">
-        </div>
-        
-    </section>
-    <section class="events">
-        <div class="events-title">
-            <h2>See the past Art Festivals</h2>
-            <div class="underline"></div>
-        </div>
-        <div class="events-text">
-            <p>
-                Take a look at the past Art Festivals and see what you can expect from the next one.
-            </p>
-        </div>
-        <div class="events-pics">
-            <div class="festival1">
-                <div class="festival-text">
-                    <h2>2022</h2>
-                    <p>Art Festival 2022 in Kigali</p>
-                </div>
-            </div>
-            <div class="festival2">
-                <div class="festival-text">
-                    <h2>2021</h2>
-                    <p>Art Festival 2021 in Durban</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end additional info -->
-    <!-- footer -->
-    <footer>
-        <section class="creative-commons2">
-            <div class="creative-commons-card">
-                <div class="creative-commons-img">
-                    <img src="images/creative_commons2.png" alt="cc">
-                </div>
-                <div class="creative-commons-text">
-                    <p>Except where otherwise noted, content on this site is licensed under a Creative Commons Attribution 4.0 International license.</p>
-                </div>
-            </div>
-        </section>
-    </footer>
 
     <script src="app.js"></script>
 </body>
