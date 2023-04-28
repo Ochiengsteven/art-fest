@@ -166,6 +166,12 @@ Give a ⭐️ if you like this project and how I managed to build it!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🎫 CREDITS <a name="credits"></a>
+
+- Original design idea by Cindy Shin [Behance](https://www.behance.net/adagio07) 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## ❓ FAQ <a name="faq"></a>
 
 - **Can I fork and reuse the repository**
