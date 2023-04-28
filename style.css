@@ -291,6 +291,18 @@ nav .logo {
   padding: 0% 2% 0% 2%;
 }
 
+.card h3 {
+  font-size: 1.2rem;
+  color: #33363f;
+  font-weight: 600;
+}
+
+.card h5 {
+  font-size: 1rem;
+  color: #f06e43;
+  font-weight: 600;
+}
+
 .partners {
   display: flex;
   flex-direction: column;
@@ -712,7 +724,8 @@ nav .logo {
     background: #ec5242;
   }
 
-  .program-btn {
+  .program-btn,
+  .home-btn {
     display: none;
   }
 
