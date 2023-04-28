@@ -23,36 +23,42 @@ const cardData = [
   {
     imageSrc: '/images/picaso1.jpg',
     subtitle: 'Pablo Picasso',
+    title: 'painter',
     description:
       'A Spanish painter, sculptor, and printmaker of the 20th century.',
   },
   {
     imageSrc: '/images/vincent.jpg',
     subtitle: 'Vincent Gogh',
+    title: 'painter',
     description:
       'A Dutch painter, He is known for his bold use of color and expressive brushwork.',
   },
   {
     imageSrc: '/images/salvador.jpg',
     subtitle: 'Salvador Dali',
+    title: 'painter',
     description:
       'A Spanish surrealist painter, Dali is known for his bizarre and dreamlike imagery.',
   },
   {
     imageSrc: '/images/leonardo.jpg',
     subtitle: 'Leonardo da Vinci',
+    title: 'polymath',
     description:
       'An Italian polymath, da Vinci was a painter, sculptor, architect, engineer, and inventor.',
   },
   {
     imageSrc: '/images/andy.jpg',
     subtitle: 'Andy Warhol',
+    title: 'artist',
     description:
       'An American artist and leading figure in the pop art movement.',
   },
   {
     imageSrc: '/images/frank.jpg',
     subtitle: 'Frank Lloyd',
+    title: 'architect',
     description:
       'An American architect, Wright is known for his innovative and organic designs.',
   },
@@ -88,7 +94,7 @@ cardData.forEach((card, index) => {
   // Create title element
   const titleElement = document.createElement('div');
   titleElement.classList.add('card-title');
-  titleElement.innerHTML = `<p>${card.subtitle}</p>`;
+  titleElement.innerHTML = `<h5>${card.title}</h5>`;
 
   // Create description element
   const descriptionElement = document.createElement('div');
