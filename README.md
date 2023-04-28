@@ -46,6 +46,19 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+>this is the link to my live demo of the portofolio page. 
+
+- https://ochiengsteven.github.io/art-fest/
+
+-introduction video 
+https://www.loom.com/share/d378fba04a2445d9b2abbbf5c47875ff
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
