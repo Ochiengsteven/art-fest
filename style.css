@@ -24,7 +24,7 @@ h3 {
   color: #ec5242;
 }
 
-main {
+.main-p {
   padding: 4%;
 }
 
@@ -125,7 +125,7 @@ p {
   justify-content: center;
   align-items: center;
   color: #fff;
-  padding: 5%;
+  padding-top: 2%;
 }
 
 .contact a {
@@ -406,6 +406,13 @@ nav .logo {
   margin: 5%;
 }
 
+article{
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin: 3%;
+  padding: 2%;
+}
+
 .events {
   display: flex;
   flex-direction: column;
@@ -581,7 +588,8 @@ nav .logo {
   }
 
   .featured-container {
-    max-height: 500px;
+    max-height: 300px;
+    padding-top: 15%;
     overflow-y: auto;
   }
 
@@ -764,7 +772,7 @@ nav .logo {
     font-weight: 800;
   }
 
-  main h3 {
+  .main-p h3 {
     font-size: 2rem;
     font-weight: 400;
     padding-left: 2%;
@@ -814,6 +822,6 @@ nav .logo {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding-bottom: 5vh;
+    padding-bottom: 12vh;
   }
 }
