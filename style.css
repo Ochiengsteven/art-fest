@@ -398,19 +398,19 @@ nav .logo {
   margin-bottom: 6%;
 }
 
+article {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin: 3%;
+  padding: 2%;
+}
+
 .additional-info article {
   width: 80%;
   text-align: center;
   font-size: 1.1rem;
   font-weight: 400;
   margin: 5%;
-}
-
-article{
-  font-size: 1.1rem;
-  font-weight: 400;
-  margin: 3%;
-  padding: 2%;
 }
 
 .events {
