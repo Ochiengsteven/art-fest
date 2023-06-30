@@ -77,7 +77,7 @@ cardData.forEach((card, index) => {
   const imageContainer = document.createElement('div');
   imageContainer.classList.add('image-container');
 
-  // Create image element
+  // Create image elements
   const imageElement = document.createElement('img');
   imageElement.src = card.imageSrc;
   imageElement.alt = card.subtitle;
